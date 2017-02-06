@@ -1,0 +1,17 @@
+<div class="manufacturer-details">
+
+<div>
+  <strong>
+    <%= @manufacturer.name %>
+  </strong>
+   / (<%= @manufacturer.country %>) /
+</div>
+
+<br/>
+<br/>
+<%= link_to 'Add a Car', new_car_path(@manufacturer, @car) %>
+<br/>
+
+<%= link_to 'Back', manufacturers_path %>
+
+</div>
